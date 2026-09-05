@@ -1,48 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDD 131 – Dynamic Web Fundamentals – Kevin Nefi Balcazar Cespedez</title>
-  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Kevin Nefi Balcazar Cespedez - Home page landing site with dynamic content and responsive layout.">
-  <meta name="author" content="Kevin Nefi Balcazar Cespedez">
-  
-  <!-- Link to external stylesheet -->
-  <link rel="stylesheet" href="styles/base.css">
-  
-  <!-- Link to JavaScript file with defer attribute -->
-  <script src="scripts/getdates.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Home Page - Kevin Nefi Balcazar Cespedez</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals home page for Kevin Nefi Balcazar Cespedez featuring course projects and dynamic content.">
+    <meta name="author" content="Kevin Nefi Balcazar Cespedez">
+
+    <!-- Google Fonts API Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!-- JavaScript File -->
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-  <header>
-    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
-    <nav>
-      <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a>
-      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank" rel="noopener">Scripture</a>
-      <a href="#">Final Project</a>
-    </nav>
-  </header>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="week01/basic-layout.html">Basic Layout</a>
+        </nav>
+    </header>
 
-  <main>
-    <h1>Kevin Nefi Balcazar Cespedez</h1>
+    <main>
+        <h2>Kevin Nefi Balcazar Cespedez</h2>
+        <p>Welcome to my WDD 131 home page. Here you will find my web development assignments and projects.</p>
+    </main>
 
-    <section class="card">
-      <h2>About Me</h2>
-      <img src="images/profile.jpg" alt="Profile picture" width="200" height="200">
-      <p>Welcome to my home page for WDD 131. Here I will learn dynamic web development using HTML, CSS, and JavaScript.</p>
-    </section>
-
-    <section class="card">
-      <h2>Web Resources</h2>
-      <img src="images/placeholder.jpg" alt="Web development graphic" width="200" height="200">
-      <p>In this section we will explore web standards, responsive layout design, and DOM manipulation using JavaScript.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; <span id="currentyear"></span> | Kevin Nefi Balcazar Cespedez | Bolivia/Cochabamba</p>
-    <p id="lastModified"></p>
-  </footer>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Kevin Nefi Balcazar Cespedez | Bolivia</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>

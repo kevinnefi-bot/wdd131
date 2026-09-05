@@ -1,7 +1,5 @@
-// Set current year in the span element with id="currentyear"
-const currentYearSpan = document.getElementById("currentyear");
-currentYearSpan.textContent = new Date().getFullYear();
+// Set the current year in the footer span
+document.getElementById("currentyear").textContent = new Date().getFullYear();
 
-// Set last modified date in the paragraph element with id="lastModified"
-const lastModifiedParagraph = document.getElementById("lastModified");
-lastModifiedParagraph.textContent = `Last Modification: ${document.lastModified}`;
+// Set the last modified date in the footer paragraph
+document.getElementById("lastModified").textContent = `Last Modification: ${document.lastModified}`;
