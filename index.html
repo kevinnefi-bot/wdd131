@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Dynamic Web Fundamentals – Kevin Nefi Balcazar Cespedez</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Kevin Nefi Balcazar Cespedez - Home page landing site with dynamic content and responsive layout.">
+  <meta name="author" content="Kevin Nefi Balcazar Cespedez">
+  
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="styles/base.css">
+  
+  <!-- Link to JavaScript file with defer attribute -->
+  <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+  <header>
+    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+    <nav>
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank" rel="noopener">Scripture</a>
+      <a href="#">Final Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Kevin Nefi Balcazar Cespedez</h1>
+
+    <section class="card">
+      <h2>About Me</h2>
+      <img src="images/profile.jpg" alt="Profile picture" width="200" height="200">
+      <p>Welcome to my home page for WDD 131. Here I will learn dynamic web development using HTML, CSS, and JavaScript.</p>
+    </section>
+
+    <section class="card">
+      <h2>Web Resources</h2>
+      <img src="images/placeholder.jpg" alt="Web development graphic" width="200" height="200">
+      <p>In this section we will explore web standards, responsive layout design, and DOM manipulation using JavaScript.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Kevin Nefi Balcazar Cespedez | Bolivia/Cochabamba</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
