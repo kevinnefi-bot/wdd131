@@ -124,3 +124,35 @@ footer {
 footer p {
   margin: 0.25rem 0;
 }
+
+/* Media Query para vista de escritorio y pantallas de más de 600px */
+@media screen and (min-width: 600px) {
+  /* Ocultar el botón del menú hamburguesa */
+  #menu {
+    display: none;
+  }
+
+  /* Cambiar el encabezado a fila horizontal */
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+
+  header span {
+    margin-bottom: 0;
+  }
+
+  /* Mostrar los enlaces de navegación de forma horizontal */
+  nav {
+    display: flex !important;
+    flex-direction: row;
+    width: auto;
+    gap: 1rem;
+  }
+
+  /* Distribuir los templos en 3 columnas usando CSS Grid */
+  .album-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
