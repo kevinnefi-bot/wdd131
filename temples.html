@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Album – WDD 131</title>
+  <meta name="description" content="Responsive temple album page demonstrating mobile-first CSS Grid, Flexbox navigation, and dynamic JavaScript features.">
+  <meta name="author" content="Kevin Nefi Balcazar Cespedez">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <span>Temple Album</span>
+    <button id="menu" aria-label="Toggle Navigation"></button>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+    <div class="album-grid">
+      <figure>
+        <img src="images/placeholder.webp" alt="Temple Placeholder" width="400" height="250" loading="lazy">
+        <figcaption>Arequipa Peru Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/placeholder.webp" alt="Temple Placeholder" width="400" height="250" loading="lazy">
+        <figcaption>Cochabamba Bolivia Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/placeholder.webp" alt="Temple Placeholder" width="400" height="250" loading="lazy">
+        <figcaption>Salt Lake Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/placeholder.webp" alt="Temple Placeholder" width="400" height="250" loading="lazy">
+        <figcaption>Bern Switzerland Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/placeholder.webp" alt="Temple Placeholder" width="400" height="250" loading="lazy">
+        <figcaption>Rome Italy Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/placeholder.webp" alt="Temple Placeholder" width="400" height="250" loading="lazy">
+        <figcaption>Tokyo Japan Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/placeholder.webp" alt="Temple Placeholder" width="400" height="250" loading="lazy">
+        <figcaption>Lima Peru Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/placeholder.webp" alt="Temple Placeholder" width="400" height="250" loading="lazy">
+        <figcaption>Madrid Spain Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/placeholder.webp" alt="Temple Placeholder" width="400" height="250" loading="lazy">
+        <figcaption>Paris France Temple</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Kevin Nefi Balcazar Cespedez | Bolivia</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
