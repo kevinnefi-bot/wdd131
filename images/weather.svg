@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-labelledby="weather-title">
+  <title id="weather-title">Parcialmente soleado</title>
+  <g fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round">
+    <path d="M25 5v4M25 41v4M5 25h4M41 25h4M11 11l3 3M36 36l3 3M11 39l3-3M36 14l3-3"/>
+    <circle cx="25" cy="25" r="11" fill="#FBBF24"/>
+  </g>
+  <path d="M22 53a9 9 0 0 1-1-18 13 13 0 0 1 25-2 10 10 0 1 1 3 20Z" fill="#F1F5F9" stroke="#64748B" stroke-width="2.5" stroke-linejoin="round"/>
+</svg>

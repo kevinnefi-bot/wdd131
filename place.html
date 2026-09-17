@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bolivia - Country Page</title>
+  <meta name="description" content="WDD 131 - Country Page assignment featuring facts, images, and static weather information for Bolivia.">
+  <meta name="author" content="Kevin Nefi Balcazar Cespedez">
+  
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Bolivia</h1>
+  </header>
+
+  <main>
+    <div class="hero">
+      <picture>
+        <source srcset="images/hero-large.webp" media="(min-width: 650px)">
+        <img src="images/hero-small.webp" alt="Landscape of Bolivia" width="500" height="300">
+      </picture>
+      
+      <section class="card data-card">
+        <h2>Data</h2>
+        <ul>
+          <li><strong>Area:</strong> 1,098,581 km²</li>
+          <li><strong>Population:</strong> 12.08 million</li>
+          <li><strong>Capital:</strong> Sucre</li>
+          <li><strong>Languages:</strong> Spanish, Quechua, Aymara</li>
+          <li><strong>Currency:</strong> Boliviano (BOB)</li>
+          <li><strong>Time Zone:</strong> UTC-4</li>
+          <li><strong>Calling Code:</strong> +591</li>
+          <li><strong>Internet TLD:</strong> .bo</li>
+        </ul>
+      </section>
+
+      <section class="card weather-card">
+        <h2>Weather</h2>
+        <img src="images/weather.svg" alt="Weather icon" class="weather-icon-mobile">
+        <ul>
+          <li><strong>Temperature:</strong> <span id="temp">8</span> °C</li>
+          <li><strong>Conditions:</strong> Partly Cloudy</li>
+          <li><strong>Wind:</strong> <span id="wind">12</span> km/h</li>
+          <li><strong>Wind Chill:</strong> <span id="chill"></span></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Kevin Nefi Balcazar Cespedez | Bolivia</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

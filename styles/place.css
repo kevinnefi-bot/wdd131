@@ -1,0 +1,121 @@
+:root {
+  --primary-color: #007a33;   /* Verde de la bandera de Bolivia */
+  --secondary-color: #d80027; /* Rojo de la bandera */
+  --accent-color: #ffda44;    /* Amarillo de la bandera */
+  --text-color: #222222;
+  --card-bg: rgba(255, 255, 255, 0.92);
+  --font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: #f4f4f9;
+  line-height: 1.5;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 1.2rem;
+  margin: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.card h2 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.card ul {
+  list-style: none;
+}
+
+.card li {
+  margin-bottom: 0.4rem;
+}
+
+.weather-icon-mobile {
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin: 0.5rem 0;
+}
+
+/* Vista Desktop / Pantallas Anchas */
+@media (min-width: 650px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+
+  .card {
+    position: absolute;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .data-card {
+    top: 20px;
+    left: 20px;
+  }
+
+  .weather-card {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .weather-icon-mobile {
+    display: none; /* Se oculta el SVG en pantallas grandes */
+  }
+
+  /* Pseudoelemento para el emoticono tras el título Weather */
+  .weather-card h2::after {
+    content: " ⛅";
+  }
+}
+
+footer {
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+footer p {
+  margin: 0.2rem 0;
+}
