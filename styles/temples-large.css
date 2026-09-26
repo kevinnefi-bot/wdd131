@@ -1,0 +1,29 @@
+@media screen and (min-width: 600px) {
+  /* Ocultar botón hamburguesa */
+  #menu {
+    display: none;
+  }
+
+  /* Mostrar navegación horizontal */
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+
+  header span {
+    margin-bottom: 0;
+  }
+
+  nav {
+    display: flex !important;
+    flex-direction: row;
+    width: auto;
+    gap: 1rem;
+  }
+
+  /* Disposición Grid de 3 columnas para tarjetas */
+  .album-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
