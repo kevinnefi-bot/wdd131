@@ -1,153 +1,105 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documento de Planificación del Sitio Web - WDD 131</title>
-    <meta name="description" content="Documento de planificación y diseño para el proyecto final de WDD 131 - Dynamic Web Fundamentals.">
-    <meta name="author" content="Kevin Nefi Balcazar Cespedez">
-    <!-- Enlace a Google Fonts y CSS opcional -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #0d3b66;
-            --secondary-color: #e36414;
-            --background-color: #f2f4f8;
-            --text-color: #2b2b2b;
-        }
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        header {
-            background-color: var(--primary-color);
-            color: #ffffff;
-            text-align: center;
-            padding: 2rem 1rem;
-        }
-        h1, h2, h3 {
-            font-family: 'Montserrat', sans-serif;
-        }
-        main {
-            max-width: 900px;
-            margin: 2rem auto;
-            background: #ffffff;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-        section {
-            margin-bottom: 2rem;
-        }
-        h2 {
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--secondary-color);
-            padding-bottom: 0.5rem;
-        }
-        .wireframe-box {
-            border: 2px dashed #ccc;
-            padding: 1.5rem;
-            text-align: center;
-            background-color: #fafafa;
-            margin-top: 1rem;
-            border-radius: 6px;
-        }
-        footer {
-            text-align: center;
-            padding: 1.5rem;
-            background-color: var(--primary-color);
-            color: #ffffff;
-            margin-top: 2rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Plan - Kevin Nefi Balcazar Cespedez</title>
+  <meta name="description" content="Website Planning Document for WDD 131 project by Kevin Nefi Balcazar Cespedez. Defines site name, purpose, scenarios, color schema, typography, and wireframes.">
+  <meta name="author" content="Kevin Nefi Balcazar Cespedez">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/siteplan.css">
 </head>
 <body>
+  <header>
+    <h1>Website Planning Document</h1>
+    <p>WDD 131 – Dynamic Web Fundamentals</p>
+  </header>
 
-    <header>
-        <h1>Documento de Planificación del Sitio Web</h1>
-        <p>WDD 131: Dynamic Web Fundamentals - Proyecto Final</p>
-    </header>
+  <main>
+    <!-- Site Name Section -->
+    <section class="plan-section">
+      <h2>Site Name</h2>
+      <div class="site-branding">
+        <img src="images/logo.webp" alt="E-Bike Club Logo" width="120" height="120">
+        <div>
+          <h3>Bay Area eBiking Club</h3>
+          <p><strong>Reason for choice:</strong> This name represents an active regional community focused on electric biking in the San Francisco Bay Area. It is memorable, concise, and clearly communicates the purpose of the organization to prospective members.</p>
+          <p><em>Optional Domain Availability: bay-ebike.org</em></p>
+        </div>
+      </div>
+    </section>
 
-    <main>
-        <!-- 1. Site Name -->
-        <section>
-            <h2>1. Nombre del Sitio (Site Name)</h2>
-            <p><strong>Nombre propuesto:</strong> Club de Ciclismo Urbano</p>
-            <p><strong>Descripción:</strong> Este nombre representa de forma directa una comunidad enfocada en promover el uso seguro, recreativo y ecológico de la bicicleta en zonas urbanas.</p>
-            <p><em>Logo de referencia:</em> Se ubicará en la carpeta <code>project/images/logo.webp</code>.</p>
-        </section>
+    <!-- Site Purpose Section -->
+    <section class="plan-section">
+      <h2>Site Purpose</h2>
+      <p>The site provides a central hub for regional e-biking enthusiasts by offering curated trail guides, safety guidelines, and e-bike buying/maintenance recommendations. Additionally, it features dynamic community events and an online membership registration form.</p>
+    </section>
 
-        <!-- 2. Site Purpose -->
-        <section>
-            <h2>2. Propósito del Sitio (Site Purpose)</h2>
-            <p>El sitio web funciona como un centro de información regional para ciclistas urbanos[cite: 6]. Ofrece recomendaciones de rutas seguras, consejos de mantenimiento mecánico básico para bicicletas y un formulario interactivo de membresía[cite: 6].</p>
-        </section>
+    <!-- Scenarios Section -->
+    <section class="plan-section">
+      <h2>Scenarios</h2>
+      <ul class="scenario-list">
+        <li><strong>Scenario 1:</strong> What is the best e-bike model to buy for steep or mountainous trail areas?</li>
+        <li><strong>Scenario 2:</strong> Where can I find contact information for the club directors and join weekly group rides?</li>
+      </ul>
+    </section>
 
-        <!-- 3. Scenarios -->
-        <section>
-            <h2>3. Escenarios de Usuarios (Scenarios)</h2>
-            <p>Las siguientes preguntas guiarán el contenido y resolverán las dudas principales de nuestro público objetivo[cite: 6]:</p>
-            <ul>
-                <li>¿Cuáles son las rutas más seguras para ir en bicicleta al centro de la ciudad?[cite: 6]</li>
-                <li>¿Dónde puedo encontrar el formulario para unirme a las rodadas nocturnas y contactar a los directores del club?[cite: 6]</li>
-            </ul>
-        </section>
+    <!-- Color Schema Section -->
+    <section class="plan-section">
+      <h2>Color Schema</h2>
+      <p>The site utilizes the following palette to convey an energetic outdoor theme while ensuring high text contrast (WCAG AA compliant):</p>
+      <div class="color-palette">
+        <div class="color-box primary">
+          <span class="color-title">Primary Color: #003366</span>
+          <small>Used for site headers, main titles, and footer backgrounds.</small>
+        </div>
+        <div class="color-box secondary">
+          <span class="color-title">Secondary Color: #0055a5</span>
+          <small>Used for navigation menus, buttons, and subheadings.</small>
+        </div>
+        <div class="color-box accent">
+          <span class="color-title">Accent Color: #e67e22</span>
+          <small>Used for call-to-action buttons, links, and highlights.</small>
+        </div>
+        <div class="color-box neutral">
+          <span class="color-title">Background / Neutral: #f4f4f9</span>
+          <small>Used for page body backgrounds and card containers.</small>
+        </div>
+      </div>
+    </section>
 
-        <!-- 4. Color Schema -->
-        <section>
-            <h2>4. Esquema de Colores (Color Schema)</h2>
-            <p>Se utilizará una paleta de colores con alto contraste que cumple con los estándares de accesibilidad (WCAG AA):</p>
-            <ul>
-                <li><strong style="color: #0d3b66;">Azul Oscuro (#0d3b66):</strong> Usado para encabezados principales, cabecera y pie de página[cite: 1, 6].</li>
-                <li><strong style="color: #e36414;">Naranja Acento (#e36414):</strong> Usado para resaltar líneas divisorias, elementos interactivos y enlaces en hover[cite: 1, 6].</li>
-                <li><strong style="color: #2b2b2b;">Texto Principal (#2b2b2b):</strong> Usado en párrafos para garantizar una lectura cómoda y limpia[cite: 1].</li>
-            </ul>
-        </section>
+    <!-- Typography Section -->
+    <section class="plan-section">
+      <h2>Typography</h2>
+      <ul class="typography-list">
+        <li><strong>Heading Font:</strong> <em>Montserrat</em> (Sans-serif) – Applied to all headings (<code>h1</code>, <code>h2</code>, <code>h3</code>) for a clean, modern aesthetic.</li>
+        <li><strong>Body Font:</strong> <em>Roboto</em> (Sans-serif) – Applied to all body text, paragraphs, and list items for optimal legibility.</li>
+      </ul>
+    </section>
 
-        <!-- 5. Typography -->
-        <section>
-            <h2>5. Tipografía (Typography)</h2>
-            <p>Se seleccionaron fuentes modernas de Google Fonts para estructurar el sitio[cite: 2, 6]:</p>
-            <ul>
-                <li><strong>Encabezados (Headings):</strong> <em>"Montserrat"</em> - Una fuente sans-serif geométrica que aporta modernidad y fuerza visual a los títulos.</li>
-                <li><strong>Cuerpo de texto (Body):</strong> <em>"Roboto"</em> - Excelente legibilidad en dispositivos móviles y de escritorio para párrafos e interfaces web.</li>
-            </ul>
-        </section>
+    <!-- Wireframes Section -->
+    <section class="plan-section">
+      <h2>Wireframes</h2>
+      <p>Visual representation of the target home page layout across different screen sizes:</p>
+      <div class="wireframe-container">
+        <figure>
+          <h3>Mobile View</h3>
+          <img src="images/wireframe-mobile.webp" alt="Mobile layout wireframe" width="300" height="500">
+          <figcaption>Single-column stacked layout optimized for smartphones.</figcaption>
+        </figure>
+        <figure>
+          <h3>Desktop View</h3>
+          <img src="images/wireframe-desktop.webp" alt="Desktop layout wireframe" width="600" height="400">
+          <figcaption>Multi-column grid layout for wide desktop displays.</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
 
-        <!-- 6. Wireframes -->
-        <section>
-            <h2>6. Bocetos o Wireframes</h2>
-            <p>A continuación se planifica la distribución visual de la página de inicio:</p>
-            
-            <h3>Vista Móvil (Mobile View)</h3>
-            <div class="wireframe-box">
-                <p><strong>[ Cabecera y Menú Hamburguesa ]</strong></p>
-                <p><strong>[ Imagen Principal (Hero Section) ]</strong></p>
-                <p><strong>[ Tarjetas de Contenido en una sola columna ]</strong></p>
-                <p><strong>[ Pie de página ]</strong></p>
-                <p><em>Imagen referencial local:</em> <code>project/images/wireframe-mobile.webp</code>[cite: 3]</p>
-            </div>
-
-            <h3 style="margin-top: 1.5rem;">Vista de Escritorio (Desktop View)</h3>
-            <div class="wireframe-box">
-                <p><strong>[ Cabecera expandida: Logo a la izquierda, Navegación horizontal a la derecha ]</strong></p>
-                <p><strong>[ Imagen Hero grande con texto descriptivo ]</strong></p>
-                <p><strong>[ Contenido principal distribuido en Cuadrícula (Grid) de múltiples columnas ]</strong></p>
-                <p><strong>[ Pie de página estructurado ]</strong></p>
-                <p><em>Imagen referencial local:</em> <code>project/images/wireframe-desktop.webp</code>[cite: 3]</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 | Kevin Nefi Balcazar Cespedez | Bolivia | WDD 131 Project Planning</p>
-    </footer>
-
+  <footer>
+    <p>&copy; <span id="currentyear">2026</span> | Kevin Nefi Balcazar Cespedez | Bolivia</p>
+  </footer>
 </body>
 </html>
